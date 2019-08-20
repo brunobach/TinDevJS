@@ -30,4 +30,11 @@ mongoose.connect('mongodb+srv://dbUser:dbPass@clusterbruno-hbzd9.mongodb.net/tes
 app.use(cors())   
 app.use(express.json())
 app.use(routes)
-server.listen(80)
+
+
+app.use("/", express.static(__dirname + "/../../frontend/dist"));
+const port = process.env.PORT || 9999;
+
+server.listen(port, function () {
+  console.log(`Servidor executando em ${port}`)
+});
