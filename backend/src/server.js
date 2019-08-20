@@ -18,7 +18,7 @@ io.on('connection', socket => {
     })
 })
 
-mongoose.connect('mongodb://localhost/omnistack', {
+mongoose.connect('mongodb+srv://dbUser:dbPass@clusterbruno-hbzd9.mongodb.net/test?retryWrites=true&w=majority', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false
@@ -30,4 +30,4 @@ mongoose.connect('mongodb://localhost/omnistack', {
 app.use(cors())   
 app.use(express.json())
 app.use(routes)
-server.listen(3333)
+server.listen(80)
