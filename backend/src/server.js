@@ -32,7 +32,7 @@ app.use(express.json())
 app.use(routes)
 
 
-app.use("/", express.static(__dirname + "/../../frontend/dist"));
+app.use("/", express.static(__dirname + "/../../frontend/build"));
 const port = process.env.PORT || 9999;
 
 server.listen(port, function () {
