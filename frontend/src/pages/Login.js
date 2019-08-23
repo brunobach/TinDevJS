@@ -27,6 +27,7 @@ export default function Login({history}){
                 placeholder="Digite seu usuário no GitHub" 
                 value={username}
                 onChange={e=>setUsername(e.target.value)}
+                autocapitalize="none"
                 />
                 <button type="submit">Entrar</button>
             </form>
