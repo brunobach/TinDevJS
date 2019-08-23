@@ -149,3 +149,9 @@
     font-weight: bold;
 
 }
+
+@media screen and (max-width: 1850px) {
+    .matchs-container {visibility: hidden;}
+    .txt-match {visibility: hidden;}
+    .avatar-img {visibility: hidden;}
+}
