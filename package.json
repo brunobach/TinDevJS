@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Um \"tinder\" para devs utilizando NodeJS.",
   "scripts": {
-    "start": "cd backend && npm dev",
+    "start": "cd backend && cd src && node server.js",
     "build": "cd backend && npm install && npm dev && cd .. && cd frontend && npm install && npm run build && cd .."
   },
   "repository": {
