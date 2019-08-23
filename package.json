@@ -4,7 +4,7 @@
   "description": "Um \"tinder\" para devs utilizando NodeJS.",
   "scripts": {
     "start": "cd backend && npm build",
-    "build": "cd backend && npm install && npm build && cd .. && cd frontend && npm install && npm run build && cd .."
+    "build": "cd backend && npm install && npm dev && cd .. && cd frontend && npm install && npm run build && cd .."
   },
   "repository": {
     "type": "git",
