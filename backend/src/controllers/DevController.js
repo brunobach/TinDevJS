@@ -60,7 +60,7 @@ module.exports = {
         
             const dev = await Dev.create({
                 name,
-                user: username,
+                user: username.toLowerCase(),
                 bio,
                 avatar
             })
